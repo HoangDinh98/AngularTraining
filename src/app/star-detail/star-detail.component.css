@@ -1,0 +1,27 @@
+.edit-form {
+    /* Before unit 7 */
+    /* margin-top: 20px;
+    margin-left: 3em;    
+    display: inline-block;
+    float: right; */
+
+    margin: 20px auto;
+    display: block;
+    text-align: left;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    border-color: #fff; /* fallback */
+    border-image: linear-gradient(-45deg, #0b87da, #03c14f, #0c62ce) 1;
+    width: 350px;
+    padding: 0 20px 20px 20px;
+    overflow: hidden;
+}
+
+#name {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.ng-valid[required], .ng-valid.required { border-left: 5px solid #42A948; /* green */ }
+.ng-invalid:not(form) { border-left: 5px solid #a94442; /* red */ }

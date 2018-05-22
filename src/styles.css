@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('/assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf') format('truetype'),
+    url('/assets/fonts/RobotoSlab/RobotoSlab-Light.ttf') format('truetype'),
+    url('/assets/fonts/RobotoSlab/RobotoSlab-Bold.ttf') format('truetype'),
+    url('/assets/fonts/RobotoSlab/RobotoSlab-Thin.ttf') format('truetype');
+}
+
+html {
+    font-family: RobotoSlab, Arial, Helvetica, sans-serif;
+}

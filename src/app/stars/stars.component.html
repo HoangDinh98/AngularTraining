@@ -1,0 +1,58 @@
+<!-- <h1>
+  {{star}}
+</h1> -->
+<!-- <div class="form-demo">
+  <h2>{{ star.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{star.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="star.name" placeholder="name">
+    </label>
+  </div>  
+</div> -->
+
+<div class="form-demo">
+  <h2>My Stars</h2>
+  <div class="form-content">
+
+    <!-- FOR Unit 4 -->
+    <!-- <div *ngIf="selectedStar" class="edit-form">
+      <h2>{{ selectedStar.name | uppercase }} Details</h2>
+      <div><span>id: </span>{{selectedStar.id}}</div>
+      <div>
+        <label>name:
+          <input [(ngModel)]="selectedStar.name" placeholder="name">
+        </label>
+      </div>
+    </div> -->
+
+    <!-- <app-star-detail [star]="selectedStar"></app-star-detail> -->
+
+
+    <!-- <ul class="stars">
+      <li *ngFor="let star of stars" [class.selected]="star === selectedStar" (click)="onSelect(star)">
+        <span class="badge">{{star.id}}</span> {{star.name}}
+      </li>
+    </ul> -->
+    <div>
+      <label>Star name:
+        <input #starName />
+      </label>
+      <!-- (click) passes input value to add() and then clears the input -->
+      <button (click)="add(starName.value); starName.value=''">
+        Add
+      </button>
+    </div>
+
+    <ul class="stars">
+      <li *ngFor="let star of stars">
+        <a routerLink="/detail/{{star.id}}">
+          <span class="badge">{{star.id}}</span> {{star.name}}
+        </a>
+        <button class="delete" title="delete star"
+        (click)="delete(star)">x</button>
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../../assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf') format('truetype'),
+    url('../../assets/fonts/RobotoSlab/RobotoSlab-Light.ttf') format('truetype'),
+    url('../../assets/fonts/RobotoSlab/RobotoSlab-Bold.ttf') format('truetype'),
+    url('../../assets/fonts/RobotoSlab/RobotoSlab-Thin.ttf') format('truetype');
+}
+
+.form-demo {
+    text-align: center;
+    font-family: 'RobotoSlab', 'Arial';
+}
+
+.form-content {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+}
+
+.stars {
+    /* margin: 0 0 2em 0; */
+    margin: 10px auto;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+    float: left;
+}
+
+.edit-form {
+    margin-top: 20px;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    margin-left: 3em;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    border-color: #fff; /* fallback */
+    border-image: linear-gradient(-45deg, #0b87da, #03c14f, #0c62ce) 1;
+    width: 350px;
+    padding: 0 20px 20px 20px;
+    overflow: hidden;
+}
+
+  .stars li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .stars li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .stars li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .stars .text {
+    position: relative;
+    top: -3px;
+  }
+  .stars .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    float: left;
+  }
+
+  button.delete {
+    top: -32px;
+    background-color: #AD0202;
+    color: white;
+    float: right;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px 9px;
+  }

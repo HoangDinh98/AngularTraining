@@ -1,0 +1,10 @@
+nav.topnav {
+    padding: 10px 20px;
+    background-color: #ef6901;
+}
+
+nav.topnav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+}

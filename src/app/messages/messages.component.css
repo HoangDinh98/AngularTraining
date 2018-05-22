@@ -1,0 +1,14 @@
+.edit-form {
+    font-family: RobotoSlab;
+    margin: 20px auto;
+    display: block;
+    text-align: left;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    border-color: #fff; /* fallback */
+    border-image: linear-gradient(-45deg, #e60000, #fff800, #ea0000) 1;
+    width: 350px;
+    padding: 0 20px 20px 20px;
+    overflow: hidden;
+}
